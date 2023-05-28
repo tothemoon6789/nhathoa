@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.header img {
+  width: 100vw;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.intro {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.product {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+.contact {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+}
+
+.footer {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

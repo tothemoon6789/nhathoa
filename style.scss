@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
+.header {
+    // width: 100vw;
+    // height: 20vh;
+    // overflow: hidden;
+    
+    img {
+        width: 100vw;
+        height: 50vh;
+        object-fit: cover;
+    }   
+}
+.intro {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.product {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.contact {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+.footer {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
