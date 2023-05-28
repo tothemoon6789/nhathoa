@@ -1,5 +1,28 @@
+
+
+
 html {
     scroll-behavior: smooth;
+}
+.wrap-header {
+  background-image: url('https://cdn.pancake.vn/1/s400x600/fwebp/89/ac/c5/bd/9cc4116c260b479171e3f20ff742043f04b9bb97fa61a1eb76216e4a.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  nav {
+    position: absolute;
+    width: 100vw;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  .center {
+    padding: 20px;
+  }
+  
 }
 .header {
     // width: 100vw;
@@ -233,3 +256,9 @@ html {
   margin-bottom: 6px;
   line-height: 0;
 }
+
+
+
+
+
+
