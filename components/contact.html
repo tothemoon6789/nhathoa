@@ -1,50 +1,14 @@
-html {
-    scroll-behavior: smooth;
-}
-.header {
-    // width: 100vw;
-    // height: 20vh;
-    // overflow: hidden;
-    
-    img {
-        width: 100vw;
-        height: 50vh;
-        object-fit: cover;
-    }   
-}
-.intro {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-}
-.product {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-}
-.contact {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: yellow;
-}
-.footer {
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: green;
-}
-.zalo {
-    width: 100px;
-    height: 100px;
-}
-.hotline-phone-ring-wrap {
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hotline-phone-ring-wrap {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -221,15 +185,24 @@ html {
     }
   }
   
-
-.float-contact {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99999;
-}
-.chat-zalo, .chat-facebook, .call-hotline {
-  display: block;
-  margin-bottom: 6px;
-  line-height: 0;
-}
+    </style>
+  </head>
+  <body>
+    <div class="hotline-phone-ring-wrap">
+        <div class="hotline-phone-ring">
+          <div class="hotline-phone-ring-circle"></div>
+          <div class="hotline-phone-ring-circle-fill"></div>
+          <div class="hotline-phone-ring-img-circle">
+          <a href="tel:0987654321" class="pps-btn-img">
+            <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+          </a>
+          </div>
+        </div>
+        <div class="hotline-bar">
+          <a href="tel:0902484656">
+            <span class="text-hotline">0987.654.321</span>
+          </a>
+        </div>
+      </div>
+  </body>
+  </html>
