@@ -85,32 +85,55 @@ body {
     object-fit: cover;
   }
 }
-.section-intro {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
-}
+// .section-intro {
+//   min-height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: red;
+// }
 .section-product {
   min-height: 100vh;
+  background: url('./images/linear-ground.svg'),url("./images/vay.svg");
+  background-position: left top,top right;
+  background-repeat: no-repeat;
+  background-size: 100%, 50%;
+  .col-6 {
+    padding: 5px;
+  }
+  .col-md-3 {
+    padding: 5px;
+  }
   .card {
-    height: 200px !important;
+    img {
+      height: 200px !important;
+      object-fit: cover;
+    }
+    .card-body {
+      .card-title {
+        font-weight: 700;
+      }
+      .btn-primary {
+        background-color: var(--primary-color);
+        border: none;
+      }
+    }
   }
 }
-.contact {
+.section-contact {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: yellow;
+  background-color: var(--primary-color);
+  background: url('./images/vay.svg');
+  background-position: left top;
+  background-size: 80%;
+  background-repeat: no-repeat;
 }
 .footer {
   min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: var(--primary-light);
 }
 .zalo {
   width: 100px;
@@ -145,7 +168,7 @@ body {
   position: absolute;
   background-color: transparent;
   border-radius: 100%;
-  border: 2px solid #e60808;
+  border: 2px solid var(--secondary-color);
   -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
   animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
   transition: all 0.5s;
@@ -160,7 +183,7 @@ body {
   top: 25px;
   left: 25px;
   position: absolute;
-  background-color: rgba(230, 8, 8, 0.7);
+  background-color: rgba(215, 109, 109, 0.7);
   border-radius: 100%;
   border: 2px solid transparent;
   -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
@@ -171,7 +194,7 @@ body {
   transform-origin: 50% 50%;
 }
 .hotline-phone-ring-img-circle {
-  background-color: #e60808;
+  background-color: var(--secondary-color);
   width: 33px;
   height: 33px;
   top: 37px;
