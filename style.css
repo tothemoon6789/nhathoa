@@ -1,25 +1,75 @@
+:root {
+  /* CSS HEX */
+  --primary-color: #b2f7efff;
+  --primary-light: #eff7f6ff;
+  --primary-color-dark: #7bdff2ff;
+  --secondary-color: #f2b5d4ff;
+  --secondary-color-light: #f7d6e0ff;
+  --text-color: #00000;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-.wrap-header {
-  background-image: url("https://cdn.pancake.vn/1/s400x600/fwebp/89/ac/c5/bd/9cc4116c260b479171e3f20ff742043f04b9bb97fa61a1eb76216e4a.jpg");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: 100%;
+body {
+  font-family: "Dancing Script", cursive !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: var(--text-color) !important;
+}
+
+.section-top {
   position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--primary-color);
+  background-image: url("./images/background-header.svg"), url("./images/linear-ground.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top center;
+  background-size: 100%, cover;
+}
+.section-top nav {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  z-index: 1000;
+}
+.section-top nav .navbar-brand {
+  font-weight: 700;
+}
+.section-top .main {
+  position: relative;
+  top: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.wrap-header nav {
-  position: absolute;
-  width: 100vw;
-  top: 80px;
-  background: rgba(0, 0, 0, 0.1) !important;
+.section-top .main .square {
+  width: 328px;
+  height: 420px;
+  background: var(--secondary-color-light);
+  border-radius: 20px;
+  overflow: hidden;
 }
-.wrap-header .center {
-  padding: 20px;
+.section-top .main .square img {
+  width: 100%;
+  overflow: hidden;
+}
+.section-top .main .circle {
+  width: 145px;
+  height: 145px;
+  background: var(--primary-color-dark);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header img {
@@ -29,7 +79,7 @@ html {
      object-fit: cover;
 }
 
-.intro {
+.section-intro {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -37,12 +87,11 @@ html {
   background-color: red;
 }
 
-.product {
+.section-product {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: blue;
+}
+.section-product .card {
+  height: 200px !important;
 }
 
 .contact {
@@ -192,7 +241,9 @@ html {
   z-index: 99999;
 }
 
-.chat-zalo, .chat-facebook, .call-hotline {
+.chat-zalo,
+.chat-facebook,
+.call-hotline {
   display: block;
   margin-bottom: 6px;
   line-height: 0;
